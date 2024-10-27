@@ -5,7 +5,6 @@
 // vector_front, vector_back i vector_size. Funkcije su članovi strukture.
 //Napomena: Koristitinew i delete. Ne koristiti funkcije malloc, free, ni std::vector
 #include <iostream>
-#include <memory>
 using namespace std;
 struct VEKTOR{
     int *niz;

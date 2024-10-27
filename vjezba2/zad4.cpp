@@ -9,6 +9,7 @@
 // decimale, poravnati udesno.
 //Napomena: Koristitinew i delete. Ne koristiti funkcije malloc, free, ni std::vector.
 #include <iostream>
+
 using namespace std;
 struct MATRICA{
     int red,stup;
