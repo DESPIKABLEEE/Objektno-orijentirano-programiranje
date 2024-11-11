@@ -8,14 +8,26 @@ using namespace std;
 
 vector<int> funkcija(vector<int>& v1, vector<int>& v2) {
 	vector<int> v3;
+	// for (int i : v1) {
+	// 	for (int j : v2) {
+	// 		if (i == j) {
+	// 			break;	
+	// 		}
+	// 		v3.push_back(i);
+	// 	}
+	// }
 	for (int i : v1) {
-		for (int j : v2) {
-			if (i == j) {
-				break;	
-			}
-			v3.push_back(i);
-		}
-	}
+	        int count = 0;
+	        for (int j : v2) {
+	            if (i == j) {
+	                count++;
+	                break;
+	            }
+	        }
+	        if (count == 0) {
+	            v3.push_back(i);
+	        }
+    	}
 	return v3;
 }
 // 1 2 3 4 5
